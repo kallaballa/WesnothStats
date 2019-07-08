@@ -4,7 +4,7 @@ This project depends on https://github.com/kallaballa/WML2XML to convert WML fil
     
     ./decide.sh game.xml
 
-Example Output:
+Example Output (WinningFaction;LosingFaction;WinningPlayer;LosingPlayer;Title;File):
 
     Drakes;Undead;Player1:Player2;Ladder Game;./game.xml
     
