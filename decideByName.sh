@@ -17,16 +17,6 @@ if [ $WELO -lt $LIMIT -o $LELO -lt $LIMIT ]; then
 	error "Elo scores to low";
 fi
 
-function parseFactionByName() {
-        faction="`xml sel -t -v "///side[@current_player='$2']/@faction_name" "$1" | head -n1`"
- 	if [ -z "$faction" ]; then
-		error "Empty faction string"
-        elif [ "$faction" == "Custom" ]; then
-		error "Unknown Faction: Custom"
-        else
-                echo "$faction"
-        fi
-}
 
 function parseSideCount() {
 	xml sel -t -v "count(///side/@current_player)" "$1"
