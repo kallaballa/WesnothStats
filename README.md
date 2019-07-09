@@ -34,3 +34,8 @@ Start a webserver in the wesnothviz directory
 View the data in the browser:
 
     xdg-open http://localhost:8000
+
+#### Example Visualization
+
+![Example Visualization](/example/viz.png?raw=true)
+
