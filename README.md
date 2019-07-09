@@ -1,4 +1,4 @@
-This project depends on https://github.com/kallaballa/WML2XML to convert WML files to XML and XmlStarlet to query the xml documents. The data/ladder.csv file has been generate from a DB dump of https://wesnoth.gamingladder.info/ with following query:
+This project depends on https://github.com/kallaballa/WML2XML to convert WML files to XML, XmlStarlet to query the xml documents and pv. The data/ladder.csv file has been generate from a DB dump of https://wesnoth.gamingladder.info/ with following query:
 
     SELECT * FROM webl_games INTO OUTFILE '/var/lib/mysql-files/ladder.csv' FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 
