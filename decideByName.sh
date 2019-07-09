@@ -1,9 +1,6 @@
 #!/bin/bash
 WINNER="$1"
 ORIG_XML="$2"
-WELO="$3"
-LELO="$4"
-LIMIT="$5"
 
 cp "$2" /tmp/current.xml
 XML="/tmp/current.xml"
@@ -12,11 +9,6 @@ function error() {
 	echo "$ORIG_XML Error: $1" 1>&2
 	exit 1
 }
-
-if [ $WELO -lt $LIMIT -o $LELO -lt $LIMIT ]; then
-	error "Elo scores to low";
-fi
-
 
 function parseSideCount() {
 	xml sel -t -v "count(///side/@current_player)" "$1"
